@@ -1,0 +1,23 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "env": {
+        "node": true,
+        "mocha": true
+    },
+    "parserOptions": {
+        "ecmaVersion": 8,
+        "project": "./tsconfig.json"
+    },
+    "extends": ["airbnb-typescript"],
+    "rules": {
+        "@typescript-eslint/indent": ["error", 4],
+        "@typescript-eslint/quotes": ["error", "single"],
+        "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
+        "padded-blocks": ["error", { "classes": "always" }],
+        "no-console": "off"
+    }
+}
